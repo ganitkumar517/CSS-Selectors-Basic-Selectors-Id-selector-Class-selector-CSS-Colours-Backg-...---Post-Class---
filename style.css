@@ -7,3 +7,91 @@
 }
 
 /* Write CSS code below */
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20% auto;
+    display: grid;
+    /* grid-template-rows: 20% 80%; */
+    grid-template-columns: 300px 700px;
+    
+    }
+    .left-content{
+        background-color:#242531;
+        grid-column: span 1;
+        grid-template-columns: 300px;
+        color: white;
+    }
+    .right-content{
+       background-color: #f7f7f7;
+        grid-column: span 1/span 2;
+        grid-template-columns: 700px;
+        
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        grid-gap: 1px;
+        
+    }
+    section{
+        display: block;
+    }
+    body{
+        display: block;
+    }
+    .left-content{
+        padding: 16px;
+    }
+    .profile-image{
+        display: block; 
+        width: 60%;
+        border-radius: 30%;
+        border: 5px white solid;
+        margin: auto;
+    }
+    .name{
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 12.8px 12.8px 12.8px 12.8px;
+    }
+    .designation{
+       font-size: 16px;
+       text-align: center;
+       text-transform: uppercase;
+       padding: 0% 0% 8px 0% ;
+      
+    }
+    .description{
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .skill-title{
+        text-align: center;
+    }
+    .skill-name{
+        text-transform: uppercase;
+        
+    }
+    .progress-bar{
+        border: 1px solid white;
+        height: 4px;
+    }
+    .right-main-content{
+        padding: 32px 48px 32px 48px;
+        text-transform: uppercase;
+    }
+    @media screen and (max-width: 673px) {
+    .main-content{
+        grid-template-columns:repeat(1,1fr) ;
+    }
+}
