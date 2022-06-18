@@ -13,12 +13,12 @@ display: grid;
 grid-template-columns: 300px 700px;
 
 }
-.left-content{
+.left-section{
     background-color:#242531;
     grid-column: span 1;
     color: white;
 }
-.right-content{
+.right-section{
    background-color: #f7f7f7;
     grid-column-end:span 1/span 2;
 }
