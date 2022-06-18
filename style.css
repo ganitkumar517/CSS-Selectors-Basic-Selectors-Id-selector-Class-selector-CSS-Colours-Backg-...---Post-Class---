@@ -63,7 +63,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
 }
-.skill-title{
+.skills{
     text-align: center;
     font-size: 0.75rem;
     text-transform: uppercase;
